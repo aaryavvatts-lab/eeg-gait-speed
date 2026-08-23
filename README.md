@@ -4,11 +4,16 @@ I set out to build a model that reads someone's brain waves and says how fast
 they are walking. The idea came from a short video that framed it as the first
 step towards a wheelchair you steer with your mind.
 
+**Live site, with a working interactive demo:** https://eeg-gait-speed.vercel.app
+
 The first score I got was **0.923**. That score is wrong, and most of this
 project is about why, and about what is left once the mistakes are fixed.
 
-Full write-up: [`report/report.md`](report/report.md).
-Shareable web page with an interactive demo: [`report/index.html`](report/index.html).
+Full write-up: [`report/report.md`](report/report.md), also published as
+[`report/index.html`](report/index.html), a self-contained page with every
+figure and the fonts embedded. The live site above is a lighter version of the
+same page, built for real hosting, with the same interactive demo but linking
+out to the full write-up instead of embedding it.
 
 ## What went wrong, and what is left
 
@@ -47,7 +52,8 @@ than brain activity. The write-up goes through this in full.
 src/gaitbci/      settings, loading, filtering, features, models, scoring, plots
 scripts/          numbered steps, each one runs on its own
 results/          figures and tables, every number in the write-up comes from here
-report/           the write-up and the web page
+report/           the write-up and the self-contained web page
+site/             the lighter page, built for real hosting on Vercel
 ```
 
 ## Running it

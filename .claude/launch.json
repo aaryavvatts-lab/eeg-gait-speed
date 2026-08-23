@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "report",
+      "name": "site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8731", "--directory", "report"],
-      "port": 8731
+      "runtimeArgs": ["-m", "http.server", "8732", "--directory", "site"],
+      "port": 8732
     }
   ]
 }
