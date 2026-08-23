@@ -1,0 +1,15 @@
+# Raw dataset (6.5 GB). Download it from PhysioNet instead.
+a-multimodal-gait-dataset-*/
+
+# Source material that is not mine to redistribute
+WheelChair Dataset EEG Project.pdf
+
+# Derived files, rebuilt by the scripts
+cache/
+results/models/
+results/log_*.txt
+report/paper_print.html
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

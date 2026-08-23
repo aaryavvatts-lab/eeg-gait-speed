@@ -1,0 +1,208 @@
+{
+  "leakage": {
+    "random": 0.9229,
+    "trial": 0.333,
+    "subject": 0.528
+  },
+  "subject_identifiability": {
+    "subject_id_accuracy": 0.5681497175141242,
+    "chance": 0.0172413793103448,
+    "lift": 32.952683615819204,
+    "n_subjects": 58.0
+  },
+  "context": {
+    "best_norm": "per_subject_z",
+    "n_common_windows": 8112,
+    "n_common_trials": 166,
+    "n_subjects": 57,
+    "eeg_all_windows_balanced_accuracy": 0.5279743758511425,
+    "eeg_all_windows_trial_balanced_accuracy": 0.5344827586206896,
+    "n_all_windows": 8496
+  },
+  "loso": {
+    "EEG": {
+      "balanced_accuracy": 0.7267,
+      "trial_balanced_accuracy": 0.9153,
+      "kappa": 0.5885,
+      "distant_error_rate": 0.0224,
+      "spearman_rho": 0.7326
+    },
+    "EMG": {
+      "balanced_accuracy": 0.8935,
+      "trial_balanced_accuracy": 0.9634,
+      "kappa": 0.8399,
+      "distant_error_rate": 0.0015,
+      "spearman_rho": 0.9137
+    },
+    "EEG+EMG": {
+      "balanced_accuracy": 0.8986,
+      "trial_balanced_accuracy": 0.9757,
+      "kappa": 0.8475,
+      "distant_error_rate": 0.0006,
+      "spearman_rho": 0.9197
+    }
+  },
+  "groupkfold_rf": {
+    "EEG|raw": {
+      "window": 0.5543,
+      "trial": 0.5545
+    },
+    "EEG|per_subject_z": {
+      "window": 0.723,
+      "trial": 0.8913
+    },
+    "EMG|raw": {
+      "window": 0.6811,
+      "trial": 0.7165
+    },
+    "EMG|per_subject_z": {
+      "window": 0.8893,
+      "trial": 0.9696
+    },
+    "EEG+EMG|raw": {
+      "window": 0.7264,
+      "trial": 0.7817
+    },
+    "EEG+EMG|per_subject_z": {
+      "window": 0.8889,
+      "trial": 0.9696
+    }
+  },
+  "dummy_balanced_accuracy": 0.3295,
+  "confounds": {
+    "all|raw": 0.528,
+    "reel|raw": 0.5369,
+    "no_lowfreq|raw": 0.5308,
+    "broadband|raw": 0.5049,
+    "no_rim|raw": 0.5329,
+    "motor|raw": 0.4132,
+    "all|per_subject_z": 0.738,
+    "reel|per_subject_z": 0.7227,
+    "no_lowfreq|per_subject_z": 0.7266,
+    "broadband|per_subject_z": 0.6922,
+    "no_rim|per_subject_z": 0.7347,
+    "motor|per_subject_z": 0.6551
+  },
+  "temporal_split": {
+    "first->second": 0.7568,
+    "second->first": 0.7766
+  },
+  "window_sensitivity": {
+    "EEG|2 s": 0.723,
+    "EMG|2 s": 0.8893,
+    "EEG+EMG|2 s": 0.8889,
+    "EEG|4 s": 0.7686,
+    "EMG|4 s": 0.8839,
+    "EEG+EMG|4 s": 0.8994
+  },
+  "permutation": {
+    "n_permutations": 200,
+    "n_trees": 200,
+    "arms": {
+      "EEG": {
+        "p_value": 0.004975124378109453,
+        "observed": 0.7190811746039364,
+        "null_mean": 0.3333297623285283,
+        "null_p95": 0.37015198173254693
+      },
+      "EMG": {
+        "p_value": 0.004975124378109453,
+        "observed": 0.8865854002604938,
+        "null_mean": 0.3325127797075922,
+        "null_p95": 0.3883873751291059
+      },
+      "EEG+EMG": {
+        "p_value": 0.004975124378109453,
+        "observed": 0.8867670450052688,
+        "null_mean": 0.33170405419086635,
+        "null_p95": 0.382660722251855
+      }
+    }
+  },
+  "band_importance": {
+    "beta": 0.0522,
+    "total power": 0.0327,
+    "theta": 0.0275,
+    "alpha": 0.026,
+    "delta": 0.0232,
+    "gamma": 0.0054
+  },
+  "top_channels": {
+    "F4": 0.0427,
+    "O1": 0.0357,
+    "C4": 0.0344,
+    "Pz": 0.0187,
+    "C3": 0.0147,
+    "Fp1": 0.0062
+  },
+  "electrode_groups": {
+    "motor": 0.0162,
+    "other": 0.0106,
+    "rim": 0.0031
+  },
+  "sensorimotor_change_db": 6.53,
+  "sensorimotor_detail": {
+    "alpha|C3": 9.69,
+    "alpha|Cz": 3.01,
+    "alpha|C4": 7.92,
+    "beta|C3": 8.63,
+    "beta|Cz": 2.31,
+    "beta|C4": 7.6
+  },
+  "rejection_by_speed": {
+    "0.5": 17.54,
+    "0.75": 13.82,
+    "1": 16.08
+  },
+  "median_cadence_hz": {
+    "0.5": 0.679,
+    "0.75": 0.812,
+    "1": 0.911
+  },
+  "realtime": {
+    "demo_subject": "S44",
+    "hop_s": 1.0,
+    "smoothing_windows": 5,
+    "hold": 2,
+    "arms": [
+      {
+        "arm": "EEG",
+        "window_accuracy": 0.7567567567567568,
+        "command_accuracy": 0.8851351351351351,
+        "transitions": [
+          {
+            "at_s": 52.0,
+            "to_speed": "0.75",
+            "latency_s": 33.0,
+            "settled": true
+          },
+          {
+            "at_s": 94.0,
+            "to_speed": "1",
+            "latency_s": 38.0,
+            "settled": true
+          }
+        ]
+      },
+      {
+        "arm": "EEG+EMG",
+        "window_accuracy": 0.972972972972973,
+        "command_accuracy": 0.9594594594594594,
+        "transitions": [
+          {
+            "at_s": 52.0,
+            "to_speed": "0.75",
+            "latency_s": 3.0,
+            "settled": true
+          },
+          {
+            "at_s": 94.0,
+            "to_speed": "1",
+            "latency_s": 3.0,
+            "settled": true
+          }
+        ]
+      }
+    ]
+  }
+}

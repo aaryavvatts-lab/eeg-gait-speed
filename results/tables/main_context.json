@@ -1,0 +1,9 @@
+{
+  "best_norm": "per_subject_z",
+  "n_common_windows": 8112,
+  "n_common_trials": 166,
+  "n_subjects": 57,
+  "eeg_all_windows_balanced_accuracy": 0.5279743758511425,
+  "eeg_all_windows_trial_balanced_accuracy": 0.5344827586206896,
+  "n_all_windows": 8496
+}

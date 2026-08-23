@@ -1,0 +1,46 @@
+{
+  "demo_subject": "S44",
+  "hop_s": 1.0,
+  "smoothing_windows": 5,
+  "hold": 2,
+  "arms": [
+    {
+      "arm": "EEG",
+      "window_accuracy": 0.7567567567567568,
+      "command_accuracy": 0.8851351351351351,
+      "transitions": [
+        {
+          "at_s": 52.0,
+          "to_speed": "0.75",
+          "latency_s": 33.0,
+          "settled": true
+        },
+        {
+          "at_s": 94.0,
+          "to_speed": "1",
+          "latency_s": 38.0,
+          "settled": true
+        }
+      ]
+    },
+    {
+      "arm": "EEG+EMG",
+      "window_accuracy": 0.972972972972973,
+      "command_accuracy": 0.9594594594594594,
+      "transitions": [
+        {
+          "at_s": 52.0,
+          "to_speed": "0.75",
+          "latency_s": 3.0,
+          "settled": true
+        },
+        {
+          "at_s": 94.0,
+          "to_speed": "1",
+          "latency_s": 3.0,
+          "settled": true
+        }
+      ]
+    }
+  ]
+}
