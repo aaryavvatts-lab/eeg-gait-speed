@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4f3ef">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script src="/assets/theme-head.js"></script>
+<link rel="preload" href="/assets/fonts/Erode-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/base.css">
+<link rel="stylesheet" href="/assets/site.css">
+<title>Privacy, terms and accessibility, Walking speed from the scalp</title>
+<meta name="description" content="What this page collects (nothing), what it stores (one theme preference), the terms it is offered under, and how accessible it aims to be.">
+<link rel="canonical" href="https://eeg-gait-speed.vercel.app/legal">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap bar">
+  <a class="bar__mark" href="/">Walking speed from the scalp</a>
+  <nav class="bar__links" aria-label="Site">
+    <a href="/#premise">The catch</a><a href="/#results">Results</a><a href="/#try">Try it</a><a href="/#limits">Limits</a><a href="/write-up.pdf">Write-up</a>
+    <button class="theme" type="button" data-theme-toggle aria-pressed="false">Light</button>
+  </nav>
+  <div class="bar__phone">
+    <button class="theme" type="button" data-theme-toggle aria-pressed="false">Light</button>
+    <button class="bar__menu textbtn" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+<nav id="menu" class="sheet" hidden aria-label="Menu">
+  <div class="bar"><span class="bar__mark">Walking speed from the scalp</span><button class="textbtn" type="button" data-menu-close>Close</button></div>
+  <div class="sheet__links"><a href="/#premise" style="--i:0">The catch</a><a href="/#results" style="--i:1">Results</a><a href="/#try" style="--i:2">Try it</a><a href="/#limits" style="--i:3">Limits</a><a href="/write-up.pdf" style="--i:4">Write-up (PDF)</a><a href="/legal" style="--i:5">Privacy and terms</a></div>
+  <p class="muted">A student project. Not medical advice and not a medical device.</p>
+</nav>
+<main id="main" class="wrap">
+  <article class="legal">
+    <h1 class="display lines"><span class="line"><span data-line style="--i:0">The small print</span></span></h1>
+    <p class="lead" data-rise style="--i:1">Notes, privacy and terms for this page. It is a student project written to learn and to be looked at.</p>
+
+    <h2 id="privacy" data-reveal>Privacy</h2>
+    <p>This is a small static site with no accounts, no forms, no comments and no analytics.</p>
+    <h3 data-reveal>What the page collects</h3>
+    <p>Nothing. There is no tracking code and no advertising on it. It does not ask you for anything.</p>
+    <h3 data-reveal>Outside requests</h3>
+    <p>None. The typefaces, scripts and figures are all served from this site. Earlier versions of this page loaded fonts from Google; that is no longer the case.</p>
+    <h3 data-reveal>What the host can see</h3>
+    <p>Whoever hosts this page, currently Vercel, can keep ordinary server records such as the address your request came from, the same as any website host. That sits outside this page and is covered by the host's own privacy policy.</p>
+    <h3 data-reveal>About the people in the data</h3>
+    <p>The recordings come from a public dataset that its authors anonymised before release, under an approved ethics protocol at their university. It holds no names or contact details, and nothing on this page can be traced back to an individual who took part.</p>
+
+    <h2 id="cookies" data-reveal>Cookies and storage</h2>
+    <p>This page sets no cookies. It stores one item in your browser's local storage: whether you chose the light or the dark theme, so the choice holds when you come back. Nothing else is stored and nothing is shared.</p>
+    <p>The interactive controller runs entirely in your browser using data that is already inside the page. It sends nothing out and saves nothing.</p>
+    <p>If the service hosting this page sets its own cookies, those are covered by that service's policy rather than this one.</p>
+
+    <h2 id="terms" data-reveal>Terms of use</h2>
+    <p>This is a student project written to learn and to be looked at. It is offered as is, with no warranty of any kind, and no promise that anything on it is correct or fit for any purpose.</p>
+    <h3 data-reveal>Not medical or clinical advice</h3>
+    <p>Nothing here is medical advice, and none of this is a medical device or part of one. Do not use anything on this page, or the code behind it, to make a decision about anybody's care, treatment, mobility equipment or safety. The wheelchair framing is a way of explaining the problem. The model shown here is nowhere near fit to steer a real chair, and the page says why.</p>
+    <h3 data-reveal>Limits</h3>
+    <p>To the fullest extent the law allows, the author is not liable for any loss or damage arising from use of this page or the code behind it.</p>
+    <h3 data-reveal>The data</h3>
+    <p>The recordings belong to Katmah and colleagues and are published on PhysioNet under a Creative Commons Attribution 4.0 licence, which allows reuse with credit. The dataset itself is not redistributed here.</p>
+    <h3 data-reveal>This page and the code</h3>
+    <p>The text, figures and code written for this project are released under the MIT licence, on the GitHub repository linked in the footer. You may reuse them with credit.</p>
+
+    <h2 id="accessibility" data-reveal>Accessibility</h2>
+    <p>This page aims at WCAG 2.1 level AA.</p>
+    <ul>
+      <li>A skip link to the main text, and proper landmarks for the header, the main content and the interactive demo.</li>
+      <li>Every control is a standard HTML input or button, so it works with a keyboard and with assistive software, with focus always visible.</li>
+      <li>Body text holds at least a 4.5 to 1 contrast ratio against its background in both the light and dark theme.</li>
+      <li>The page respects a reduced motion setting. Entrances are dropped and the demo does not animate on its own.</li>
+      <li>Text reflows down to a 320 pixel wide screen. Wide tables scroll inside their own box rather than pushing the page sideways.</li>
+    </ul>
+    <p>The interactive chart is drawn on a canvas, which a screen reader cannot read directly. A written summary next to it updates as the settings change, giving the same numbers in text.</p>
+    <p>If something on this page does not work with the software you use, the GitHub repository linked in the footer is the place to raise it.</p>
+  </article>
+</main>
+<footer class="wrap close">
+  <p>Nothing here is medical advice, and none of this is a medical device or part of one. Do not use anything on this page, or the code behind it, to make a decision about anybody's care, treatment, mobility equipment or safety.</p>
+  <p class="close__mark">Walking speed from the scalp</p>
+  <div class="close__meta"><a href="/write-up.pdf">Full write-up (PDF)</a><a href="https://github.com/aaryavvatts-lab/eeg-gait-speed" target="_blank" rel="noopener">Code<span class="sr-only"> (opens in a new tab)</span></a><a href="/legal#privacy">Privacy</a><a href="/legal#terms">Terms</a><a href="/legal#accessibility">Accessibility</a></div>
+  <p class="small muted">Data: Katmah, R., AlShehhi, A., Kosaji, D., Al-Rahmani, N., Abdullah, M., Hulleck, A. A. V., and Khalaf, K. (2026). A multimodal gait dataset of brain activity, muscle activity, kinematics and ground forces in young adults, version 1.0.0. PhysioNet. <a class="link" href="https://doi.org/10.13026/r0ea-7161" target="_blank" rel="noopener">doi.org/10.13026/r0ea-7161<span class="sr-only"> (opens in a new tab)</span></a>. Used under a Creative Commons Attribution 4.0 licence. The figures on this page are from the project's own pipeline. Built and written by Aaryav Sharma.</p>
+</footer>
+<script src="/assets/kit.js" defer></script>
+</body>
+</html>

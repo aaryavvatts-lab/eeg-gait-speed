@@ -1,0 +1,68 @@
+/* Reading walking speed from the scalp: the contact sheet. The project's own figures are the frames. */
+.bar__phone { display: none; align-items: center; gap: 1.1rem; }
+@media (max-width: 47.99em) { .bar__phone { display: flex; } }
+.hero { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); row-gap: 1.5rem; padding-block: clamp(1.5rem, 4vw, 3rem) 2rem; align-items: end; }
+.hero h1 { grid-column: 1 / span 12; }
+.hero__side { grid-column: 1 / span 12; }
+@media (min-width: 60em) { .hero h1 { grid-column: 1 / span 7; } .hero__side { grid-column: 8 / span 5; } }
+.hero .lead { max-width: 38ch; }
+.hero .facts { margin-top: 0.9rem; }
+/* the frame run */
+.run { display: flex; gap: var(--gutter); overflow-x: auto; scroll-snap-type: x mandatory; padding-block: 1rem 0.5rem; scrollbar-width: thin; margin-inline: calc(var(--margin) * -1); padding-inline: var(--margin); }
+.run figure { flex: 0 0 min(78vw, 36rem); scroll-snap-align: start; background: var(--surface); padding: 1rem; }
+.run figure:first-child { flex-basis: min(86vw, 44rem); }
+.run img { width: 100%; height: auto; }
+.run figcaption { margin-top: 0.6rem; }
+.run-hint { margin-top: 0.5rem; }
+/* reading */
+.read { max-width: 62ch; }
+.read .head { margin-bottom: 1.2rem; }
+.read p + p { margin-top: 0.9em; }
+.twin { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); row-gap: 2rem; align-items: start; }
+.twin__a { grid-column: 1 / span 12; }
+.twin__b { grid-column: 1 / span 12; }
+@media (min-width: 60em) { .twin__a { grid-column: 1 / span 6; } .twin__b { grid-column: 8 / span 5; } }
+.twin .head { margin-bottom: 1.2rem; }
+.figlines { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
+.figlines div { display: grid; grid-template-columns: 6.5rem 1fr; column-gap: 1.25rem; align-items: baseline; }
+.figlines dt { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; line-height: 1; }
+.figlines dt.bad { color: var(--bad); }
+.figlines dt.good { color: var(--good); }
+.figlines dd { color: var(--muted); }
+.s44 { position: relative; aspect-ratio: 4 / 5; background: color-mix(in oklab, var(--accent) 14%, var(--bg)); overflow: hidden; }
+.s44 img { width: 100%; height: 100%; object-fit: cover; }
+.s44-cap { margin-top: 0.75rem; }
+table.results td, table.results th { white-space: nowrap; }
+/* the controller */
+.sim { background: var(--surface); padding: clamp(1rem, 2.5vw, 2rem); margin-top: 2rem; }
+.sim h3 { font-size: var(--step-lead); line-height: 1.2; }
+.sim > p { margin-top: 0.5rem; }
+.ctls { display: grid; gap: 1.25rem 2rem; margin-top: 1.5rem; }
+@media (min-width: 48em) { .ctls { grid-template-columns: repeat(3, 1fr); } }
+.ctl label, .ctl .lbl { display: block; font-weight: 500; }
+.ctl .val { display: block; color: var(--muted); margin-top: 0.3rem; font-variant-numeric: tabular-nums; }
+.radios { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.radios label { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 0.9rem; background: var(--bg); cursor: pointer; font-weight: 400; }
+.radios label:has(input:checked) { background: var(--ink); color: var(--bg); }
+.radios input { accent-color: var(--accent); margin: 0; }
+#simCanvas { width: 100%; height: 16rem; background: var(--bg); margin-top: 1.25rem; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-top: 0.8rem; color: var(--muted); font-size: var(--step-small); }
+.legend span { display: inline-flex; align-items: center; gap: 0.5rem; }
+.legend i { display: inline-block; width: 1.1rem; height: 4px; background: currentColor; }
+.legend .k-real { color: var(--ink); }
+.legend .k-cmd { color: var(--accent); }
+.legend .k-raw i { width: 6px; height: 6px; }
+.legend .k-chg { color: var(--bad); }
+.sim__actions { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; margin-top: 1.25rem; }
+.readout { display: grid; gap: 0.3rem 2rem; margin-top: 1.25rem; }
+@media (min-width: 48em) { .readout { grid-template-columns: repeat(3, auto); justify-content: start; } }
+.readout b { font-weight: 500; font-variant-numeric: tabular-nums; color: var(--accent); }
+.limits p + p { margin-top: 0.9em; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; align-items: center; margin-top: 1.5rem; }
+/* legal page */
+.legal { max-width: 62ch; padding-block: clamp(2rem, 6vw, 5rem) calc(var(--section) / 2); }
+.legal h2 { font-size: var(--step-lead); margin-top: 2.5rem; }
+.legal h3 { font-size: var(--step-body); font-weight: 600; margin-top: 1.5rem; }
+.legal h2 + p, .legal h3 + p, .legal p + p, .legal ul { margin-top: 0.7rem; }
+.legal ul { padding-left: 1.2em; }
+.legal li + li { margin-top: 0.4rem; }

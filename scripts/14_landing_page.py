@@ -18,7 +18,7 @@ import sys
 
 from gaitbci import config as cfg, refs, webpage
 
-OUT = cfg.ROOT / "site" / "index.html"
+OUT = cfg.ROOT / "report" / "landing-generated.html"  # site/index.html is hand-authored since the October 2026 redesign; this script no longer overwrites it
 
 FULL_REPORT_URL = "https://claude.ai/code/artifact/1f300dea-4ad8-4849-b8d5-0ad01f862670"
 GITHUB_URL = "https://github.com/aaryavvatts-lab/eeg-gait-speed"

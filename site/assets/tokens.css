@@ -1,0 +1,106 @@
+/* Shared tokens for the eleven sites. Light is the :root default; dark applies by OS preference unless
+   the visitor chose light, and always when they chose dark. Each site sets its own --accent pair by
+   overriding the two accent lines (or by data-site below). Everything downstream uses tokens only. */
+:root {
+  color-scheme: light dark;
+
+  /* ground, surface, ink */
+  --bg: #f4f3ef;
+  --surface: #eae8e2;
+  --ink: #1a1a19;
+  --muted: #5d5e59;
+
+  /* the one accent (default: portfolio sage) */
+  --accent: #5c6a1a;
+  --accent-ink: #f4f3ef;
+
+  /* data roles: shared meaning across every chart */
+  --good: #2b7a4b;
+  --warn: #8a6410;
+  --bad: #a4382c;
+
+  /* project accents, light-ground values (used by the portfolio index; sites use --accent) */
+  --acc-portfolio: #4e6b4d;
+  --acc-eeg: #1f6f68;
+  --acc-ssvep: #1e7a4b;
+  --acc-gait: #5c6a1a;
+  --acc-myo: #2d5bd1;
+  --acc-cortical: #176f8c;
+  --acc-speech: #a0325e;
+  --acc-slicewise: #a03027;
+  --acc-neuroswitch: #83660f;
+  --acc-pneumonia: #4a627c;
+  --acc-diabetes: #6b5b33;
+
+  /* type */
+  --font: "Erode", Georgia, "Times New Roman", serif;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --step-display: clamp(2.5rem, 1.2rem + 5.4vw, 5rem);
+
+  /* space */
+  --margin: clamp(1rem, 2.2vw, 2rem);
+  --gutter: clamp(1rem, 2vw, 2rem);
+  --section: clamp(4.5rem, 11vw, 12rem);
+  --radius: 0px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+  --t-press: 140ms;
+  --t-hover: 180ms;
+  --t-ui: 240ms;
+  --t-reveal: 800ms;
+}
+
+/* dark palette: by OS preference unless the visitor picked light */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1c1c1c;
+    --surface: #262626;
+    --ink: #f1f1ef;
+    --muted: #a3a49f;
+    --accent: #a9b85a;
+    --accent-ink: #1c1c1c;
+    --good: #6cc596;
+    --warn: #d9b24c;
+    --bad: #e0837a;
+    --acc-portfolio: #8fa68e;
+    --acc-eeg: #5fbdb0;
+    --acc-ssvep: #5cc08a;
+    --acc-gait: #a9b85a;
+    --acc-myo: #7fa0ea;
+    --acc-cortical: #63b9d9;
+    --acc-speech: #d98ba8;
+    --acc-slicewise: #d07068;
+    --acc-neuroswitch: #d3a93f;
+    --acc-pneumonia: #9ab0c6;
+    --acc-diabetes: #bfae88;
+  }
+}
+/* dark palette: the visitor picked dark */
+:root[data-theme="dark"] {
+  --bg: #1c1c1c;
+  --surface: #262626;
+  --ink: #f1f1ef;
+  --muted: #a3a49f;
+  --accent: #a9b85a;
+  --accent-ink: #1c1c1c;
+  --good: #6cc596;
+  --warn: #d9b24c;
+  --bad: #e0837a;
+  --acc-portfolio: #8fa68e;
+  --acc-eeg: #5fbdb0;
+  --acc-ssvep: #5cc08a;
+  --acc-gait: #a9b85a;
+  --acc-myo: #7fa0ea;
+  --acc-cortical: #63b9d9;
+  --acc-speech: #d98ba8;
+  --acc-slicewise: #d07068;
+  --acc-neuroswitch: #d3a93f;
+  --acc-pneumonia: #9ab0c6;
+  --acc-diabetes: #bfae88;
+}
