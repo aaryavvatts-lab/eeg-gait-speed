@@ -4,7 +4,7 @@ I set out to build a model that reads someone's brain waves and says how fast
 they are walking. The idea came from a short video that framed it as the first
 step towards a wheelchair you steer with your mind.
 
-**Live site, with a working interactive demo:** https://eeg-gait-speed.vercel.app
+**Live site, with a working interactive demo:** https://eeg-walking-speed.vercel.app
 
 The first score I got was **0.923**. That score is wrong, and most of this
 project is about why, and about what is left once the mistakes are fixed.
